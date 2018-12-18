@@ -1,0 +1,28 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background: transparent;
+
+}
+.head {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+
+    max-width: 1366px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+
+
+@import '_media';
