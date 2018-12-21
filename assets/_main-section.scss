@@ -1,0 +1,40 @@
+.main {
+	width: 49%;
+	margin-right: 2%;
+}
+
+.main__body {
+	padding: 26px 25px 0 25px;
+	background-color: rgba(0, 100, 200, 0.3);
+}
+
+.main__greeting {
+	margin-bottom: 10px;
+	font-size: 27px;
+	font-weight: $bold;
+}
+
+.main__temperature {
+	display: flex;
+}
+
+.main__status, .main__temperature_title {
+	font-size: $small-size;
+}
+
+.main__status {
+	margin-bottom: 28px;
+}
+
+.main__temperature_title {
+	margin-bottom: 4px;
+}
+
+.main__temperature_indoors, .main__temperature_outdoors {
+	min-width: 80px;
+}
+
+.main__temperature_value {
+	font-size: calc(2em + 4px);
+	font-weight: $bold;
+}

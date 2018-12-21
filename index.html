@@ -9,18 +9,74 @@
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-<header class="head">
-    <img src="/src/img/logo.png" alt="">
-    <nav>
-        
+<header class="header container">
+    <img src="./src/img/logo.png" alt="">
+    <nav class="head-nav">
+        <ul class="head-nav__ul">
+            <li class="head-nav__li"><a href="#" class="head-nav__link active">Сводка</a></li>
+            <li class="head-nav__li"><a href="#" class="head-nav__link">Устройства</a></li>
+            <li class="head-nav__li"><a href="#" class="head-nav__link">Сценарии</a></li>
+        </ul>
     </nav>
 </header>
-<div class="container">
-    asdasd
-    A
-    <HR>
-    ASD
-</div>
-<p>1</p>
+<main class="container wrapper">
+    <section class="main section">
+        <h2 class="title">
+            Главное
+        </h2>
+        <div class="main__body">
+            <div class="main__info">
+                <div class="main__greeting">
+                    Привет, Геннадий!
+                </div>
+                <div class="main__status">
+                    Двери и окна закрыты, сигнализация включена
+                </div>
+                <div class="main__temperature">
+                    <div class="main__temperature_indoors">
+                        <div class="main__temperature_title">
+                            Дома
+                        </div>
+                        <div class="main__temperature_value">
+                            +23
+                        </div>
+                    </div>
+                    <div class="main__temperature_outdoors">
+                        <div class="main__temperature_title">
+                            За окном
+                        </div>
+                        <div class="main__temperature_value">
+                            +19 <img src="./src/img/svg/cloud-drizzle.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__devices">
+
+            </div>
+        </div>
+    </section>
+    <section class="scripts section">
+        <div class="section__upper">
+            <h2 class="title">Избранные сценарии</h2>
+            <div class="scripts__scroller"></div>
+        </div>
+        <div class="scripts__area"></div>
+    </section>
+    <section class="devices section">
+        <div class="section__upper">
+            <h2 class="title"></h2>
+            <div class="devices__filter"></div>
+            <div class="devices__scroller"></div>
+        </div>
+        <div class="devices__row"></div>
+    </section>
+</main>
+<footer class="footer">
+    <nav class="footer__nav">
+
+    </nav>
+    <div class="copyright"></div>
+</footer>
 </body>
 </html>

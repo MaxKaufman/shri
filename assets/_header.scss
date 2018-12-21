@@ -1,0 +1,30 @@
+.header {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.head-nav {
+  margin-left: 52px;
+}
+.head-nav__ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.head-nav__li {
+  margin-right: 28px;
+}
+.head-nav__link {
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: $bold;
+  color: $inactive;
+  line-height: 20px;
+  text-decoration: none;
+}
+.head-nav__link.active {
+  opacity: 1;
+  color: $black;
+}
+
