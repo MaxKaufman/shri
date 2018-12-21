@@ -1,0 +1,35 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 200px;
+	min-height: 100px;
+	padding: 14px;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+	background-color: $light-gray;
+	@include transition($default-transition);
+	&:hover, &:active {
+		cursor: pointer;
+		box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+		background: $white;
+	}
+
+}
+.item__text {
+	margin: auto 0 0 0;
+	font-weight: $bold;
+	font-size: $small-size;
+	color: $gray;
+	letter-spacing: 0;
+	line-height: 1.2;
+	text-align: left;
+}
+.item__mode {
+	margin-top: 7px;
+	font-weight: $regular;
+	font-size: 0.75rem;
+	color: $mode-color;
+	letter-spacing: 0;
+}
+

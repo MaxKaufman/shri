@@ -6,6 +6,15 @@ $bold: 700;
 $regular: 400;
 
 //colors
-$inactive: #333333;
+$gray: #333333;
+$light-gray:  #F7F7F7;
 $black: #000;
 $white: #fff;
+$mode-color: #858585;
+
+//transition
+$transition-time-and-style: 0.3s ease-in-out;
+$default-transition: box-shadow $transition-time-and-style,
+					 color $transition-time-and-style,
+					 background-color $transition-time-and-style,
+					 border $transition-time-and-style;

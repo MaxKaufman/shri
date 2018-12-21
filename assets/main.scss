@@ -10,13 +10,15 @@ html {
 html, body {
     margin: 0;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     background: transparent;
 }
 .container {
     max-width: 1366px;
-    padding: 0 40px;
+    padding: 0 0 0 40px;
     //background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 .title {
@@ -32,6 +34,7 @@ body {
 @import 'header';
 @import 'main-section';
 @import 'scripts';
+@import 'item';
 
 
 
