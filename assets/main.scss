@@ -16,12 +16,19 @@ html, body {
 body {
     background: transparent;
 }
-main {
+main.container {
     margin-bottom: 8px;
+}
+button {
+    outline: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 .container {
     max-width: 1366px;
     padding: 0 0 0 40px;
+    margin: 0 auto;
 }
 .title {
     margin-bottom: 20px;
@@ -32,6 +39,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
+}
+.sm-hidden {
+    display: block;
 }
 
 @import 'section';

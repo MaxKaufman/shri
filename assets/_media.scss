@@ -1,0 +1,110 @@
+@media (max-width: 991px) {
+	.main__temperature_wrap {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 900px) {
+	$small-size: 12px;
+	.main {
+		margin: 0 0 31px 0;
+		.item {
+			margin-right: 20px;
+		}
+	}
+	.main, .devices, .scripts {
+		width: 100%;
+	}
+	.main__body {
+		flex-direction: column;
+		min-height: inherit;
+	}
+	.main__devices {
+		margin: 0;
+	}
+	.main__column {
+		flex-direction: row;
+	}
+	.main__greeting {
+		font-size: 18px;
+		margin-bottom: 8px;
+	}
+	.item {
+		margin-bottom: 21px;
+		align-self: flex-start;
+	}
+	.sm-hidden {
+		display: none;
+	}
+	.main__status, .main__temperature_title {
+		font-size: $small-size;
+	}
+	.main__temperature_img {
+		max-width: 20px;
+		height: auto;
+	}
+	.main__temperature_value {
+		display: flex;
+		align-items: flex-start;
+	}
+	.main__info {
+		padding-top: 0;
+	}
+	.main__body {
+		padding-top: 23px;
+		padding-left: 21px;
+	}
+	.header {
+		border-bottom: none;
+		min-height: 62px;
+	}
+	.container{
+		padding: 0;
+	}
+	.container.header {
+		padding: 0 20px;
+	}
+	.section {
+		padding: 0 20px;
+	}
+	.section.scripts, .section.devices {
+		padding-right: 0;
+	}
+	.main__status {
+		margin-bottom: 16px;
+	}
+	.main__temperature_indoors, .main__temperature_outdoors {
+		min-width: 59px;
+	}
+	.main__temperature_wrap {
+		margin-right: 6px;
+	}
+	.main__temperature {
+		margin-bottom: 21px;
+	}
+	.main__column {
+		height: auto;
+		width: 10000px;
+	}
+	.scripts__area {
+		width: 10000px;
+	}
+	.scripts__wrap {
+		overflow-x: hidden;
+	}
+	.item__text {
+		line-height: 1.2;
+	}
+	.scripts {
+		margin-bottom: 14px;
+
+	}
+	.footer__a, .copyright {
+		padding: 0 20px;
+		font-size: 0.65rem;
+	}
+	.footer__li {
+		margin-bottom: 10px;
+	}
+
+}

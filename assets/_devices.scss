@@ -22,11 +22,11 @@
 .devices__filter-btn {
 	display: block;
 	margin-right: 8px;
-	padding: 8px 15px;
+	padding: 8px 14px;
 	background-color: $light-gray;
 	font-size: 0.8125rem;
 	font-weight: $bold;
-	border-radius: 20px;
+	border-radius: $main-border-radius;
 	border: none;
 }
 .devices__filter-btn.active {

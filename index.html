@@ -10,8 +10,8 @@
 </head>
 <body>
 <header class="header container">
-    <img src="src/img/png/logo.png" alt="">
-    <nav class="head-nav">
+    <img src="src/img/png/logo.png" alt="ЯндексДом">
+    <nav class="head-nav sm-hidden">
         <ul class="head-nav__ul">
             <li class="head-nav__li"><a href="#" class="head-nav__link active">Сводка</a></li>
             <li class="head-nav__li"><a href="#" class="head-nav__link">Устройства</a></li>
@@ -21,7 +21,7 @@
 </header>
 <main class="container wrapper">
     <section class="main section">
-        <h2 class="title">
+        <h2 class="title sm-hidden">
             Главное
         </h2>
         <div class="main__body">
@@ -30,7 +30,7 @@
                     Привет, Геннадий!
                 </div>
                 <div class="main__status">
-                    Двери и окна закрыты, сигнализация включена
+                    Двери и окна закрыты, сигнализация включена.
                 </div>
                 <div class="main__temperature">
                     <div class="main__temperature_indoors">
@@ -38,7 +38,7 @@
                             Дома
                         </div>
                         <div class="main__temperature_value">
-                            +23
+                            <div class="main__temperature_wrap">+23</div>
                         </div>
                     </div>
                     <div class="main__temperature_outdoors">
@@ -46,10 +46,14 @@
                             За окном
                         </div>
                         <div class="main__temperature_value">
-                            +19 <img src="./src/img/svg/cloud-drizzle.svg" alt="">
+                            <div class="main__temperature_wrap">+19</div>
+                            <img src="./src/img/svg/cloud-drizzle.svg" alt="Облачно" class="main__temperature_img">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="main__next-devices sm-hidden">
+                <img src="./src/img/svg/more.svg" alt="Дальше">
             </div>
             <div class="main__devices">
                 <div class="main__column">
@@ -82,19 +86,19 @@
                         <div class="item__text">
                             Выключить весь свет в доме и во дворе
                         </div>
-                    </article><article class="item">
-                    <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
-                    <div class="item__text">
-                        Выключить весь свет в доме и во дворе
-                    </div>
-                </article><article class="item">
-                    <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
-                    <div class="item__text">
-                        Выключить весь свет в доме и во дворе
-                    </div>
-                </article>
-
-
+                    </article>
+                    <article class="item">
+                        <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
+                        <div class="item__text">
+                            Выключить весь свет в доме и во дворе
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
+                        <div class="item__text">
+                            Выключить весь свет в доме и во дворе
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -102,52 +106,54 @@
     <section class="scripts section">
         <div class="section__upper">
             <h2 class="title">Избранные сценарии</h2>
-            <div class="scroller scroller-scripts">
+            <div class="scroller scroller-scripts sm-hidden">
                 <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow">
                 <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow">
             </div>
         </div>
-        <div class="scripts__area">
-            <article class="item">
-                <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
-                <div class="item__text">
-                    Выключить весь свет в доме и во дворе
-                </div>
-            </article>
-            <article class="item">
-                <img class="item__image" src="./src/img/svg/icon_scheduled.svg">
-                <div class="item__text">
-                    Я ухожу
-                </div>
-            </article>
-            <article class="item">
-                <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
-                <div class="item__text">
-                    Включить свет в коридоре
-                </div>
-            </article>
-            <article class="item">
-                <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
-                <div class="item__text">
-                    Набрать горячую ванну
-                    <p class="item__mode">
-                        Начнётся в 18:00
-                    </p>
-                </div>
-            </article>
-            <article class="item">
-                <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
-                <div class="item__text">
-                    Сделать пол тёплым во всей квартире
-                </div>
-            </article>
+        <div class="scripts__wrap">
+            <div class="scripts__area">
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
+                    <div class="item__text">
+                        Выключить весь свет в доме и во дворе
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_scheduled.svg">
+                    <div class="item__text">
+                        Я ухожу
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
+                    <div class="item__text">
+                        Включить свет в коридоре
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Набрать горячую ванну
+                        <p class="item__mode">
+                            Начнётся в 18:00
+                        </p>
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Сделать пол тёплым во всей квартире
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
     <section class="devices section">
         <div class="section__upper devices__upper">
             <h2 class="title">Избранные устройства</h2>
             <div class="devices__filter">
-                <div class="devices__filter_lg">
+                <div class="devices__filter_lg sm-hidden">
                     <button class="devices__filter-btn active">Все</button>
                     <button class="devices__filter-btn">Кухня</button>
                     <button class="devices__filter-btn">Зал</button>
@@ -156,7 +162,7 @@
                 </div>
                 <div class="devices__filter_sm"></div>
             </div>
-            <div class="scroller scroller-devices">
+            <div class="scroller scroller-devices sm-hidden">
                 <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow ">
                 <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow active">
             </div>
@@ -235,6 +241,24 @@
                         </p>
                     </div>
                 </article>
+                <article class="item">Xiaomi Mi Air Purifier 2S
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Test
+                        <p class="item__mode">
+                            Выключено
+                        </p>
+                    </div>
+                </article>
+                <article class="item">Xiaomi Mi Air Purifier 2S
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Test Super
+                        <p class="item__mode">
+                            Включено
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -248,7 +272,7 @@
             <li class="footer__li"><a href="#" class="footer__a">Условия использования</a></li>
         </ul>
     </nav>
-    <div class="copyright">© 2001–2017  ООО «Яндекс»</div>
+    <div class="copyright">© 2001–2017 ООО «Яндекс»</div>
 </footer>
 </body>
 </html>

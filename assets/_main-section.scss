@@ -8,9 +8,10 @@
 }
 
 .main__body {
+	position: relative;
 	display: flex;
 	overflow: hidden;
-	padding: 20px 21px 0 25px;
+	padding: 20px $main-padding-right 0 25px;
 	max-height: 330px;
 	min-height: 331px;
 	background: #fff url('./../img/jpeg/12.jpg') no-repeat;
@@ -20,6 +21,7 @@
 	padding-top: 8px;
 }
 .main__greeting {
+	margin-right: 5px;
 	margin-bottom: 10px;
 	font-size: 27px;
 	font-weight: $bold;
@@ -29,16 +31,15 @@
 	display: flex;
 }
 
-.main__status, .main__temperature_title {
+.main__status {
+	margin: 0 5px 27px 0;
 	font-size: $small-size;
 }
 
-.main__status {
-	margin-bottom: 28px;
-}
-
 .main__temperature_title {
-	margin-bottom: 4px;
+	color: $mode-color;
+	font-size: 0.81rem;
+	margin-bottom: 8px;
 }
 
 .main__temperature_indoors, .main__temperature_outdoors {
@@ -58,4 +59,24 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	height: 10000px;
+}
+.main__next-devices{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	width: 202px;
+	height: 41px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: $main-padding-right - 1px;
+	background-color: $light-gray;
+	border-radius: $main-border-radius $main-border-radius 0 0;
+}
+.main__temperature_img {
+	margin-left: -3px;
+}
+.main__temperature_wrap {
+	float: left;
+	margin-right: 10px;
 }
