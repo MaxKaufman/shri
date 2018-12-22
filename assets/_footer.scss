@@ -1,0 +1,24 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 50px;
+}
+.footer__ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer__a, .copyright {
+	font-size: 0.75rem;
+	color: $mode-color;
+	letter-spacing: 0.01px;
+}
+.footer__li {
+	margin-right: 21px;
+}
+.footer__a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}

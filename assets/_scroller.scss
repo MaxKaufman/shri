@@ -1,0 +1,16 @@
+.scroller {
+	display: flex;
+	justify-content: space-between;
+	width: 40px;
+}
+.scroller__arrow {
+	display: block;
+	width: 10px;
+	height: 14px;
+}
+.scroller__arrow.active {
+
+}
+.scroller-scripts {
+	margin-right: 40px;
+}

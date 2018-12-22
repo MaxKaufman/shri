@@ -1,0 +1,44 @@
+.devices {
+	width: 100%;
+	.title {
+		margin-bottom: 0;
+	}
+	.item {
+		min-height: 120px;
+	}
+}
+.devices__upper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 19px;
+}
+.devices__filter {
+	margin: 0 auto 0 12px;
+}
+.devices__filter_lg {
+	display: flex;
+
+}
+.devices__filter-btn {
+	display: block;
+	margin-right: 8px;
+	padding: 8px 15px;
+	background-color: $light-gray;
+	font-size: 0.8125rem;
+	font-weight: $bold;
+	border-radius: 20px;
+	border: none;
+}
+.devices__filter-btn.active {
+	background-color: $yellow;
+}
+.scroller-devices {
+	margin-right: 45px;
+}
+.devices__visible-area {
+	overflow-x: hidden;
+}
+.devices__row {
+	display: flex;
+	width: 10000px;
+}

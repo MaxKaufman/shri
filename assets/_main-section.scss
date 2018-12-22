@@ -1,15 +1,24 @@
 .main {
 	width: 47.5%;
-	margin-right: 2%;
+	margin: 0 2% 28px 0;
+	.item {
+		min-height: 120px;
+		margin-right: 0;
+	}
 }
 
 .main__body {
-	padding: 26px 25px 0 25px;
+	display: flex;
+	overflow: hidden;
+	padding: 20px 21px 0 25px;
+	max-height: 330px;
 	min-height: 331px;
-	background: #fff url('./../img/jpeg/bg.jpeg');
+	background: #fff url('./../img/jpeg/12.jpg') no-repeat;
 	border-radius: 19px;
 }
-
+.main__info{
+	padding-top: 8px;
+}
 .main__greeting {
 	margin-bottom: 10px;
 	font-size: 27px;
@@ -41,3 +50,12 @@
 	font-weight: $bold;
 }
 
+.main__devices{
+	margin: 0 0 0 auto;
+}
+.main__column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 10000px;
+}

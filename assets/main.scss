@@ -16,10 +16,12 @@ html, body {
 body {
     background: transparent;
 }
+main {
+    margin-bottom: 8px;
+}
 .container {
     max-width: 1366px;
     padding: 0 0 0 40px;
-    //background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 .title {
     margin-bottom: 20px;
@@ -31,11 +33,15 @@ body {
     flex-wrap: wrap;
     padding-top: 30px;
 }
+
+@import 'section';
+@import 'scroller';
 @import 'header';
 @import 'main-section';
 @import 'scripts';
 @import 'item';
-
+@import 'devices';
+@import 'footer';
 
 
 @import 'media';
