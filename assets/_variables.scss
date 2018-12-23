@@ -22,4 +22,5 @@ $transition-time-and-style: 0.3s ease-in-out;
 $default-transition: box-shadow $transition-time-and-style,
 					 color $transition-time-and-style,
 					 background-color $transition-time-and-style,
-					 border $transition-time-and-style;
+					 border $transition-time-and-style,
+					 margin-top $transition-time-and-style;

@@ -4,44 +4,55 @@
 @import 'mixins';
 
 html {
-    font-size: $base-size;
-    font-family: $font-reg;
+	font-size: $base-size;
+	font-family: $font-reg;
 }
+
 html, body {
-    margin: 0;
+	margin: 0;
 }
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 body {
-    background: transparent;
+	background: transparent;
 }
+
 main.container {
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
+
 button {
-    outline: none;
-    &:hover {
-        cursor: pointer;
-    }
+	outline: none;
+	&:hover {
+		cursor: pointer;
+	}
 }
+
 .container {
-    max-width: 1366px;
-    padding: 0 0 0 40px;
-    margin: 0 auto;
+	max-width: 1366px;
+	padding: 0 0 0 40px;
+	margin: 0 auto;
 }
+
 .title {
-    margin-bottom: 20px;
-    font-size: $title-size;
-    font-weight: 700;
+	margin-bottom: 20px;
+	font-size: $title-size;
+	font-weight: 700;
 }
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
 }
+
 .sm-hidden {
-    display: block;
+	display: block;
+}
+[jsrow] {
+	@include transition($default-transition);
 }
 
 @import 'section';
@@ -52,6 +63,5 @@ button {
 @import 'item';
 @import 'devices';
 @import 'footer';
-
 
 @import 'media';

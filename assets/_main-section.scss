@@ -72,6 +72,9 @@
 	right: $main-padding-right - 1px;
 	background-color: $light-gray;
 	border-radius: $main-border-radius $main-border-radius 0 0;
+	&:hover {
+		cursor: pointer;
+	}
 }
 .main__temperature_img {
 	margin-left: -3px;
