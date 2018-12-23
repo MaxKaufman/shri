@@ -52,11 +52,11 @@
                     </div>
                 </div>
             </div>
-            <div class="main__next-devices sm-hidden" jsScroller="main">
+            <div class="main__next-devices sm-hidden" jsToggler="main" jsTogglerType="forward">
                 <img src="./src/img/svg/more.svg" alt="Дальше">
             </div>
             <div class="main__devices">
-                <div class="main__column" jsRow="main">
+                <div class="main__row" jsRow="main" jsAdaptive="900">
                     <article class="item">
                         <img class="item__image" src="./src/img/svg/icon_temperature.svg">
                         <div class="item__text">
@@ -106,13 +106,13 @@
     <section class="scripts section">
         <div class="section__upper">
             <h2 class="title">Избранные сценарии</h2>
-            <div class="scroller scroller-scripts sm-hidden">
+            <div class="scroller scroller-scripts sm-hidden" jsToggler="scripts" jsTogglerType="both">
                 <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow">
                 <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow">
             </div>
         </div>
         <div class="scripts__wrap">
-            <div class="scripts__area">
+            <div class="scripts__area" jsRow="scripts" jsAdaptive="900">
                 <article class="item">
                     <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
                     <div class="item__text">
@@ -162,13 +162,13 @@
                 </div>
                 <div class="devices__filter_sm"></div>
             </div>
-            <div class="scroller scroller-devices sm-hidden">
+            <div class="scroller scroller-devices sm-hidden" jsToggler="devices" jsTogglerType="both">
                 <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow ">
                 <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow active">
             </div>
         </div>
         <div class="devices__visible-area">
-            <div class="devices__row">
+            <div class="devices__row" jsRow="devices" jsAdaptive="900">
                 <article class="item">
                     <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
                     <div class="item__text">
@@ -232,7 +232,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">Xiaomi Mi Air Purifier 2S
+                <article class="item">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Xiaomi Mi Air Purifier 2S
@@ -241,7 +241,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">Xiaomi Mi Air Purifier 2S
+                <article class="item">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Test
@@ -250,7 +250,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">Xiaomi Mi Air Purifier 2S
+                <article class="item">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Test Super
@@ -274,7 +274,7 @@
     </nav>
     <div class="copyright">© 2001–2017 ООО «Яндекс»</div>
 </footer>
-
+<script src="./src/js/libs/john-doherty/pure-swipe.min.js"></script>
 <script src="./src/js/script.js"></script>
 </body>
 </html>

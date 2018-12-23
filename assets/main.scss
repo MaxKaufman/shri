@@ -52,7 +52,10 @@ button {
 	display: block;
 }
 [jsrow] {
-	@include transition($default-transition);
+	transition-property: margin-left, margin-top;
+	transition-duration: 0.3s, 0.3s;
+	transition-timing-function: linear, linear;
+
 }
 
 @import 'section';

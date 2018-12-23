@@ -22,8 +22,10 @@
 	.main__devices {
 		margin: 0;
 	}
-	.main__column {
+	.main__row {
 		flex-direction: row;
+		height: auto;
+		width: 10000px;
 	}
 	.main__greeting {
 		font-size: 18px;
@@ -83,8 +85,7 @@
 		margin-bottom: 21px;
 	}
 	.main__column {
-		height: auto;
-		width: 10000px;
+
 	}
 	.scripts__area {
 		width: 10000px;
