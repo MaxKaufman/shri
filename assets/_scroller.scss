@@ -14,3 +14,8 @@
 .scroller-scripts {
 	margin-right: 40px;
 }
+[jstogglertype] {
+	&:hover {
+		cursor: pointer;
+	}
+}

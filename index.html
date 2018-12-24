@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main__next-devices sm-hidden" jsToggler="main" jsTogglerType="forward">
+            <div class="main__next-devices sm-hidden" jsToggler="main" jsTogglerType="mainNext">
                 <img src="./src/img/svg/more.svg" alt="Дальше">
             </div>
             <div class="main__devices">
@@ -106,9 +106,9 @@
     <section class="scripts section">
         <div class="section__upper">
             <h2 class="title">Избранные сценарии</h2>
-            <div class="scroller scroller-scripts sm-hidden" jsToggler="scripts" jsTogglerType="both">
-                <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow">
-                <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow">
+            <div class="scroller scroller-scripts sm-hidden" jsToggler="scripts">
+                <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow" jsTogglerType="scriptsPrev">
+                <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow" jsTogglerType="scriptsNext">
             </div>
         </div>
         <div class="scripts__wrap">
@@ -146,6 +146,27 @@
                         Сделать пол тёплым во всей квартире
                     </div>
                 </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
+                    <div class="item__text">
+                        Включить свет в коридоре1
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Набрать горячую ванну2
+                        <p class="item__mode">
+                            Начнётся в 18:00
+                        </p>
+                    </div>
+                </article>
+                <article class="item">
+                    <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
+                    <div class="item__text">
+                        Сделать пол тёплым во всей квартире3
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -154,22 +175,28 @@
             <h2 class="title">Избранные устройства</h2>
             <div class="devices__filter">
                 <div class="devices__filter_lg sm-hidden">
-                    <button class="devices__filter-btn active">Все</button>
-                    <button class="devices__filter-btn">Кухня</button>
-                    <button class="devices__filter-btn">Зал</button>
-                    <button class="devices__filter-btn">Лампочки</button>
-                    <button class="devices__filter-btn">Камеры</button>
+                    <button class="devices__filter-btn active" devSelect="0">Все</button>
+                    <button class="devices__filter-btn" devSelect="1">Кухня</button>
+                    <button class="devices__filter-btn" devSelect="2">Зал</button>
+                    <button class="devices__filter-btn" devSelect="3">Лампочки</button>
+                    <button class="devices__filter-btn" devSelect="4">Камеры</button>
                 </div>
-                <div class="devices__filter_sm"></div>
+                <select class="devices__filter_sm">
+                    <option class="devices__filter-opt" devSelect="0" >Все</option>
+                    <option class="devices__filter-opt" devSelect="1">Кухня</option>
+                    <option class="devices__filter-opt" devSelect="2">Зал</option>
+                    <option class="devices__filter-opt" devSelect="3">Лампочки</option>
+                    <option class="devices__filter-opt" devSelect="4">Камеры</option>
+                </select>
             </div>
-            <div class="scroller scroller-devices sm-hidden" jsToggler="devices" jsTogglerType="both">
-                <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow ">
-                <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow active">
+            <div class="scroller scroller-devices sm-hidden" jsToggler="devices">
+                <img src="./src/img/png/arrow@2x.png" alt="Предыдущий" class="scroller__arrow" jsTogglerType="devicesPrev">
+                <img src="./src/img/png/arrow_next@2x.png" alt="Следующий" class="scroller__arrow active" jsTogglerType="devicesNext">
             </div>
         </div>
         <div class="devices__visible-area">
             <div class="devices__row" jsRow="devices" jsAdaptive="900">
-                <article class="item">
+                <article class="item" devType="3">
                     <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
                     <div class="item__text">
                         Xiaomi Yeelight LED Smart Bulb
@@ -178,7 +205,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="4">
                     <img class="item__image" src="./src/img/svg/icon_sun.svg">
                     <div class="item__text">
                         D-Link Omna 180 Cam
@@ -187,7 +214,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="2">
                     <img class="item__image" src="./src/img/svg/icon_temperature.svg">
                     <div class="item__text">
                         Elgato Eve Degree Connected
@@ -196,7 +223,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="3">
                     <img class="item__image" src="./src/img/svg/icon_sun.svg">
                     <div class="item__text">
                         LIFX Mini Day & Dusk A60 E27
@@ -205,7 +232,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="1">
                     <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
                     <div class="item__text">
                         Xiaomi Mi Air Purifier 2S
@@ -214,7 +241,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="3">
                     <img class="item__image" src="./src/img/svg/icon_sun.svg">
                     <div class="item__text">
                         Philips Zhirui
@@ -223,7 +250,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="3">
                     <img class="item__image" src="./src/img/svg/icon_sun_2.svg">
                     <div class="item__text">
                         Philips Zhirui
@@ -232,7 +259,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="1">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Xiaomi Mi Air Purifier 2S
@@ -241,7 +268,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="1">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Test
@@ -250,7 +277,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="item">
+                <article class="item" devType="2">
                     <img class="item__image" src="./src/img/svg/icon_temperature_2.svg">
                     <div class="item__text">
                         Test Super

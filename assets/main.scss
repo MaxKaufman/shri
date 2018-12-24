@@ -51,6 +51,10 @@ button {
 .sm-hidden {
 	display: block;
 }
+.none {
+	display: none!important;
+}
+
 [jsrow] {
 	transition-property: margin-left, margin-top;
 	transition-duration: 0.3s, 0.3s;

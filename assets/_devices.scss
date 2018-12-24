@@ -32,6 +32,17 @@
 .devices__filter-btn.active {
 	background-color: $yellow;
 }
+.devices__filter_sm {
+	display: none;
+	width: 71px;
+	padding: 6px 11px;
+	font-weight: $bold;
+	background-color: $yellow;
+	border-radius: $main-border-radius;
+}
+.devices__filter-opt {
+
+}
 .scroller-devices {
 	margin-right: 45px;
 }
