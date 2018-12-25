@@ -1,0 +1,16 @@
+.popup {
+	background-color: transparent;
+	width: 630px;
+	max-width: 100%;
+}
+.popup__title {
+	font-size: 27px;
+}
+
+.popup__content {
+	background-color: $white;
+	border-radius: $main-border-radius;
+}
+.popup__close, .popup__submit {
+	border-radius: $main-border-radius;
+}
