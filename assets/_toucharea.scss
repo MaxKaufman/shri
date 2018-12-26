@@ -1,0 +1,25 @@
+.touch-area__light {
+  background-image: linear-gradient(-85deg, #FF9E00 2%, #FFE682 98%);
+  height: 59px;
+  width: 100%;
+  border-radius: 29px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 19px;
+    width: 30px;
+    height: 30px;
+    background: transparent url('./../img/svg/icon_sun_3.svg') 0 0 no-repeat;
+  }
+  &::after {
+    @extend .touch-area__light::before;
+    left: inherit;
+    right: 19px;
+  }
+}
+
+.touch-area__pointer {
+
+}

@@ -1,16 +1,76 @@
 .popup {
-	background-color: transparent;
-	width: 630px;
-	max-width: 100%;
+  width: 630px;
+  max-width: 100%;
+  background-color: transparent;
+
 }
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .popup__title {
-	font-size: 27px;
+  font-size: 27px;
+  font-weight: $bold;
+}
+
+.popup__image {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+
+.popup__mode {
+  margin-top: -2px;
+  margin-bottom: 19px;
+  font-size: $small-size;
 }
 
 .popup__content {
-	background-color: $white;
-	border-radius: $main-border-radius;
+  margin-bottom: 20px;
+  padding: 26px 25px;
+  background-color: $white;
+  border-radius: $main-border-radius;
 }
+
 .popup__close, .popup__submit {
-	border-radius: $main-border-radius;
+  border: none;
+  font-size: 18px;
+  padding: 20px 100px;
+  width: 49%;
+  border-radius: $main-border-radius;
+}
+.popup__close {
+  background: $white;
+}
+.popup__submit {
+  background: $yellow;
+}
+.popup__breakpoints {
+  margin-bottom: 28px;
+  overflow-x: hidden;
+}
+.popup__breakpoints_wrap {
+  width: 10000px;
+  display: flex;
+}
+.popup__breakpoint {
+  display: block;
+  margin-right: 8px;
+  padding: 6px 13px;
+  background-color: $light-gray;
+  font-size: 0.8125rem;
+  font-weight: $bold;
+  border-radius: $main-border-radius;
+  border: none;
+}
+.popup__breakpoint.active {
+  background-color: $yellow;
+}
+
+.popup__btns {
+  display: flex;
+  justify-content: space-between;
 }

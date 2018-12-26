@@ -5,30 +5,40 @@
     <title>Title</title>
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
-<body style="background-color: #4aff2d; display: flex; justify-content: center; align-items: center;">
+<body style="background-color: #4aff2d; display: flex; justify-content: center; align-items: center; padding-top: 200px;">
 
-    <div class="popup">
-        <div class="popup__content">
-            <div class="popup__header">
-                <div class="popup__title">Xiaomi Yeelight LED Smart Bulb</div>
-                <img src="./src/img/svg/icon_sun.svg" alt="" class="popup__image">
-            </div>
-            <div class="popup__mode">
-
-            </div>
-            <div class="popup__breakpoints">
-
-            </div>
-            <div class="popup__touch-area">
-
-            </div>
-            
+<div class="popup">
+    <div class="popup__content">
+        <div class="popup__header">
+            <div class="popup__title">Xiaomi Yeelight LED Smart Bulb</div>
+            <img src="./src/img/svg/icon_sun.svg" alt="" class="popup__image">
         </div>
-        <div class="popup__btns">
-            <button class="popup__submit">Применить</button>
-            <button class="popup__close">Закрыть</button>
+        <div class="popup__mode">
+            Включится в 17:00
         </div>
+        <div class="popup__breakpoints">
+            <div class="popup__breakpoints_wrap">
+                <button class="popup__breakpoint active" devselect="0">Вручную</button>
+                <button class="popup__breakpoint" devselect="1">Дневной свет</button>
+                <button class="popup__breakpoint" devselect="2">Вечерний свет</button>
+                <button class="popup__breakpoint" devselect="3">Рассвет</button>
+            </div>
+        </div>
+        <div class="touch-area">
+            <div class="touch-area__light">
+                <div class="touch-area__pointer">
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
+    <div class="popup__btns">
+        <button class="popup__submit">Применить</button>
+        <button class="popup__close">Закрыть</button>
+    </div>
+</div>
 
 </body>
 </html>
